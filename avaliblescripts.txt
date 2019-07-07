@@ -5,7 +5,7 @@
 
 +++ Abuse Items
 ### escriptions1
-$$$ http://megogo.com
+$$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk/SendKey.ahk
 
 
 +++ Dupe items
