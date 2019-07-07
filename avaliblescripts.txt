@@ -5,24 +5,24 @@
 
 +++ Abuse Items
 ### escriptions1
-$$$ link
+$$$ http://megogo.com
 
 
 +++ Dupe items
 ### Descriptions2
-$$$ link2
+$$$ http://spacex.com
 
 +++ Ohh my..
 ### Descriptions3
-$$$ link3
+$$$ http://instagram.com
 
 
 
 +++ Foth
 ### Descriptions4
-$$$ link
+$$$ http://youtube.com
 
 
 +++ 555555
 ### Descriptions5
-$$$ link2
+$$$ http://google.com
