@@ -14,7 +14,7 @@ $$$ http://spacex.com
 
 +++ Test_Script
 ### Descriptions3
-$$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk/TestScript.ahk
+$$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk/Test_Script.ahk
 
 
 
