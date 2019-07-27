@@ -12,6 +12,7 @@ $$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk
 +++ 23232
 ### Descriptions3
 $$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk/Test_Script.ahk
+Not Release
 
 +++ fdsfdsdffsd
 ### Descriptions3
