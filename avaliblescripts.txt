@@ -10,7 +10,7 @@
 $$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk/Test_Script.ahk
 
 +++ 23232
-### 12345678900012345678900001234567890000012345678900000001111222244445555`n6666777788889999`n1 `n 2
+### 12345678900012345678900001234567890000012345678900000001111222244445555 `n 6666777788889999`n1 `n 2
 $$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk/Test_Script.ahk
 Not Release
 
