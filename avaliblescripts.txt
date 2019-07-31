@@ -10,7 +10,7 @@
 $$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk/Test_Script.ahk
 
 +++ 23232
-### рило`nлоро`nлрририо
+### firstline ^^ secondline ^^ thirdline
 $$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk/Test_Script.ahk
 Not Release
 
