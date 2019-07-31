@@ -25,8 +25,8 @@ $$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk
 Not Release
 
 +++ Comming Soon
-### 1line `n 2line `n 3line
-$$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk/Second_Test.ahk
+### 
+$$$ 
 Not Release
 
 +++ Comming Soon
