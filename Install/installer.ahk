@@ -1,6 +1,6 @@
 ; Project - Dota Scripts Loader
-; File  - installer.ahk
-; Description - Install all script files.
+; File  - startup.ahk
+; Description - Launch main script-code.
 ; Credits:
 ; BASS_DEVWARE
 ; vk.com/bass_devware
@@ -49,13 +49,13 @@ if dir !=
 oWhr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
 oWhr.Open("GET", "https://raw.githubusercontent.com/MirchikAhtung/dotasl/master/compiler.bat", false)
 oWhr.Send()
-html := oWhr.ResponseText
+compiler := oWhr.ResponseText
 IfExist, compiler.bat
 	FileDelete, compiler.bat
 ahkfolder := A_AhkPath
 StringReplace, ahkfolder, ahkfolder, AutoHotkey.exe, Compiler, All
-StringReplace, html, html, &, %ahkfolder%\, All
-FileAppend,  %html%, compiler.bat
+StringReplace, compiler, compiler, &, %ahkfolder%\, All
+FileAppend,  %compiler%, compiler.bat
 guicontrol,, msctls_progress321, 20
 guicontrol,, static1, github / compiler.bat
 
@@ -65,10 +65,10 @@ IfExist, uninstall.exe
 oWhr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
 oWhr.Open("GET", "https://raw.githubusercontent.com/MirchikAhtung/dotasl/master/uninstall.ahk", false)
 oWhr.Send()
-html := oWhr.ResponseText
+uninstall := oWhr.ResponseText
 IfExist, uninstall.ahk
 	FileDelete, uninstall.ahk
-FileAppend,  %html%, uninstall.ahk
+FileAppend,  %uninstall%, uninstall.ahk
 guicontrol,, msctls_progress321, 40
 guicontrol,, static1, github / uninstall.ahk
 
@@ -79,10 +79,10 @@ IfExist, startup.exe
 oWhr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
 oWhr.Open("GET", "https://raw.githubusercontent.com/MirchikAhtung/dotasl/master/startup.ahk", false)
 oWhr.Send()
-html := oWhr.ResponseText
+startup := oWhr.ResponseText
 IfExist, startup.ahk
 	FileDelete, startup.ahk
-FileAppend,  %html%, startup.ahk
+FileAppend,  %startup%, startup.ahk
 guicontrol,, msctls_progress321, 60
 guicontrol,, static1, github / startup.ahk
 sleep 100
@@ -94,10 +94,10 @@ sleep 2000 ; Чтобы файлы успели появиться.
 oWhr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
 oWhr.Open("GET", "https://raw.githubusercontent.com/MirchikAhtung/dotasl/master/README.md", false)
 oWhr.Send()
-html := oWhr.ResponseText
+README := oWhr.ResponseText
 IfExist, readme.txt
 	FileDelete, readme.txt
-FileAppend,  %html%, readme.txt
+FileAppend,  %README%, readme.txt
 guicontrol,, msctls_progress321, 80
 FileDelete, compiler.bat
 FileDelete, uninstall.ahk
