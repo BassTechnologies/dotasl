@@ -1,6 +1,6 @@
 ; Project - Dota Scripts Loader
-; File  - startup.ahk
-; Description - Launch main script-code.
+; File  - uninstall.ahk
+; Description - Uninstall script files.
 ; Credits:
 ; BASS_DEVWARE
 ; vk.com/bass_devware
