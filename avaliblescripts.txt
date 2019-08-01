@@ -5,9 +5,9 @@
 - Ссылка на исходный код скрипта
 
 
-+++ Test_Script
++++ Abuse_Items
 ### Abuse items from inventory by backpack. Abusing 3 slots.
-$$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/example%20.ahk/Test_Script.ahk
+$$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/scripts4dotasl/Abuse_Items.ahk
 
 +++ Comming Soon
 ###
