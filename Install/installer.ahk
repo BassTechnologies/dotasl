@@ -33,7 +33,7 @@ gui, +disabled
 FileSelectFolder, dir, , 4
 if dir !=
 {
-	FileDelete, config.txt
+	FileDelete, %dir%\config.txt
 	sleep 10
 	FileAppend,  %dir%, %dir%\config.txt
 	TrayTip, Selected DIR, %dir%, 3
