@@ -1,6 +1,6 @@
 ; Project - Dota Scripts Loader
-; File  - uninstall.ahk
-; Description - Uninstall script files.
+; File  - startup.ahk
+; Description - Launch main script-code.
 ; Credits:
 ; BASS_DEVWARE
 ; vk.com/bass_devware
@@ -38,6 +38,20 @@ IfExist, %dir2remove%\readme.txt
 	guicontrol,, static1, remove / readme.txt
 }
 sleep 100
+IfExist, %dir2remove%\installer.exe
+{
+	FileDelete, %dir2remove%\readme.txt
+	guicontrol,, msctls_progress321, 40
+	guicontrol,, static1, remove / readme.txt
+}
+sleep 100
+IfExist, %dir2remove%\config.txt
+{
+	FileDelete, %A_MyDocuments%\DotaSL\config.txt
+	guicontrol,, msctls_progress321, 80
+	guicontrol,, static1, remove / config.txt
+}
+sleep 100
 IfExist, %A_Desktop%\Startup.exe
 {
 	FileDelete, %A_Desktop%\Startup.exe
@@ -45,21 +59,21 @@ IfExist, %A_Desktop%\Startup.exe
 	guicontrol,, static1, remove / Startup.exe
 }
 sleep 100
-IfExist, %A_MyDocuments%\DotaSL\config.txt
-{
-	FileDelete, %A_MyDocuments%\DotaSL\config.txt
-	guicontrol,, msctls_progress321, 80
-	guicontrol,, static1, remove / config.txt
-}
-sleep 100
-IfExist, %A_MyDocuments%\DotaSL\logo.png
-{
-	FileDelete, %A_MyDocuments%\DotaSL\logo.png
-	guicontrol,, msctls_progress321, 90
-	guicontrol,, static1, remove / logo.png
+;~ IfExist, %A_MyDocuments%\DotaSL\config.txt
+;~ {
+	;~ FileDelete, %A_MyDocuments%\DotaSL\config.txt
+	;~ guicontrol,, msctls_progress321, 80
+	;~ guicontrol,, static1, remove / config.txt
+;~ }
+;~ sleep 100
+;~ IfExist, %A_MyDocuments%\DotaSL\logo.png
+;~ {
+	;~ FileDelete, %A_MyDocuments%\DotaSL\logo.png
+	;~ guicontrol,, msctls_progress321, 90
+	;~ guicontrol,, static1, remove / logo.png
 	;~ Загрузка файла происходит в source.exe
-}
-sleep 100
+;~ }
+;~ sleep 100
 IfExist, %A_MyDocuments%\DotaSL
 {
 	FileRemoveDir, %A_MyDocuments%\DotaSL, 1
