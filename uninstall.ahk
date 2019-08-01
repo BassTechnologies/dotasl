@@ -23,7 +23,7 @@ return
 
 start:
 if dir2remove =
-	dir2remove = %A_MyDocuments%\DotaSL
+	dir2remove = %A_WorkingDir%
 IfExist, %dir2remove%\Startup.exe
 {
 	FileDelete, %dir2remove%\Startup.exe
