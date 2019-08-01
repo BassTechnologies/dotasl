@@ -47,7 +47,7 @@ IfExist, %dir2remove%\installer.exe
 sleep 100
 IfExist, %dir2remove%\config.txt
 {
-	FileDelete, %A_MyDocuments%\DotaSL\config.txt
+	FileDelete, %dir2remove%\config.txt
 	guicontrol,, msctls_progress321, 80
 	guicontrol,, static1, remove / config.txt
 }
