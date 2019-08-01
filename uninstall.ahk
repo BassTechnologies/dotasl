@@ -40,7 +40,7 @@ IfExist, %dir2remove%\readme.txt
 sleep 100
 IfExist, %dir2remove%\installer.exe
 {
-	FileDelete, %dir2remove%\readme.txt
+	FileDelete, %dir2remove%\installer.exe
 	guicontrol,, msctls_progress321, 40
 	guicontrol,, static1, remove / readme.txt
 }
