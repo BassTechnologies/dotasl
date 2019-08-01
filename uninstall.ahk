@@ -59,21 +59,6 @@ IfExist, %A_Desktop%\Startup.exe
 	guicontrol,, static1, remove / Startup.exe
 }
 sleep 100
-;~ IfExist, %A_MyDocuments%\DotaSL\config.txt
-;~ {
-	;~ FileDelete, %A_MyDocuments%\DotaSL\config.txt
-	;~ guicontrol,, msctls_progress321, 80
-	;~ guicontrol,, static1, remove / config.txt
-;~ }
-;~ sleep 100
-;~ IfExist, %A_MyDocuments%\DotaSL\logo.png
-;~ {
-	;~ FileDelete, %A_MyDocuments%\DotaSL\logo.png
-	;~ guicontrol,, msctls_progress321, 90
-	;~ guicontrol,, static1, remove / logo.png
-	;~ Загрузка файла происходит в source.exe
-;~ }
-;~ sleep 100
 IfExist, %A_MyDocuments%\DotaSL
 {
 	FileRemoveDir, %A_MyDocuments%\DotaSL, 1
@@ -83,6 +68,7 @@ IfExist, %A_MyDocuments%\DotaSL
 MsgBox, 4160, Dota Scripts Loader | Installer, Процесс деинсталляции завершен.
 IfMsgBox, OK
 	run, https://github.com/MirchikAhtung/dotasl/tree/master
-
+IfExist, %dir2remove%\uninstall.exe
+	FileDelete, %dir2remove%\uninstall.exe
 cancel:
 ExitApp
