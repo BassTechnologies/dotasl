@@ -26,7 +26,6 @@ Gui, Add, GroupBox, x12 y0 w505 h50 ,
 Gui, Show, w529 h109, Dota Scripts Loader | Installer
 IfNotExist, %A_MyDocuments%\DotaSL
 	FileCreateDir, %A_MyDocuments%\DotaSL
-SetWorkingDir, %A_MyDocuments%\DotaSL
 return
 
 dir:
@@ -36,7 +35,7 @@ if dir !=
 {
 	FileDelete, config.txt
 	sleep 10
-	FileAppend,  %dir%, config.txt
+	FileAppend,  %dir%, %dir%\config.txt
 	TrayTip, Selected DIR, %dir%, 3
 }
 gui, -disabled
@@ -46,6 +45,8 @@ start:
 gui, +disabled
 if dir !=
 	SetWorkingDir, %dir%
+else
+	SetWorkingDir, %A_WorkingDir%
 oWhr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
 oWhr.Open("GET", "https://raw.githubusercontent.com/MirchikAhtung/dotasl/master/compiler.bat", false)
 oWhr.Send()
