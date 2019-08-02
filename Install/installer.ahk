@@ -1,5 +1,5 @@
 ; Project - Dota Scripts Loader
-; File  - startup.ahk
+; File  - installer.ahk
 ; Description - Launch main script-code.
 ; Credits:
 ; BASS_DEVWARE
@@ -75,17 +75,17 @@ guicontrol,, static1, github / uninstall.ahk
 
 sleep 100
 
-IfExist, startup.exe
-	FileDelete, startup.exe
+IfExist, LauncherDOTASL.exe
+	FileDelete, LauncherDOTASL.exe
 oWhr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
-oWhr.Open("GET", "https://raw.githubusercontent.com/MirchikAhtung/dotasl/master/startup.ahk", false)
+oWhr.Open("GET", "https://raw.githubusercontent.com/MirchikAhtung/dotasl/master/LauncherDOTASL.ahk", false)
 oWhr.Send()
-startup := oWhr.ResponseText
-IfExist, startup.ahk
-	FileDelete, startup.ahk
-FileAppend,  %startup%, startup.ahk
+LauncherDOTASL := oWhr.ResponseText
+IfExist, LauncherDOTASL.ahk
+	FileDelete, LauncherDOTASL.ahk
+FileAppend,  %LauncherDOTASL%, LauncherDOTASL.ahk
 guicontrol,, msctls_progress321, 60
-guicontrol,, static1, github / startup.ahk
+guicontrol,, static1, github / LauncherDOTASL.ahk
 sleep 100
 run, compiler.bat,, UseErrorLevel
 if errorlevel
@@ -102,7 +102,7 @@ FileAppend,  %README%, readme.txt
 guicontrol,, msctls_progress321, 80
 FileDelete, compiler.bat
 FileDelete, uninstall.ahk
-FileDelete, startup.ahk
+FileDelete, LauncherDOTASL.ahk
 ;~ В будущих обновлениях добавлю возможность выбора: сохранят исходники для установки без сети или так же удалять.
 guicontrol,, msctls_progress321, 100
 guicontrol,, static1, completion...
@@ -111,9 +111,9 @@ IfNotExist, config.txt
 	FileAppend,  , config.txt
 
 MsgBox, 4160, Dota Scripts Loader | Installer, Процесс установки завершен.
-run, Startup.exe,, UseErrorLevel
+run, LauncherDOTASL.exe,, UseErrorLevel
 if errorlevel
-	MsgBox ошибка при запуске Startup.exe
+	MsgBox ошибка при запуске LauncherDOTASL.exe
 
 cancel:
 ExitApp
