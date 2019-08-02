@@ -1,5 +1,5 @@
 ; Project - Dota Scripts Loader
-; File  - startup.ahk
+; File  - uninstall.ahk
 ; Description - Launch main script-code.
 ; Credits:
 ; BASS_DEVWARE
@@ -24,11 +24,11 @@ return
 start:
 if dir2remove =
 	dir2remove = %A_WorkingDir%
-IfExist, %dir2remove%\Startup.exe
+IfExist, %dir2remove%\LauncherDOTASL.exe
 {
-	FileDelete, %dir2remove%\Startup.exe
+	FileDelete, %dir2remove%\LauncherDOTASL.exe
 	guicontrol,, msctls_progress321, 20
-	guicontrol,, static1, remove / Startup.exe
+	guicontrol,, static1, remove / LauncherDOTASL.exe
 }
 sleep 100
 IfExist, %dir2remove%\readme.txt
