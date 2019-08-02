@@ -1,5 +1,5 @@
 ; Project - Dota Scripts Loader
-; File  - startup.ahk
+; File  - LauncherDOTASL.ahk
 ; Description - Launch main script-code.
 ; Credits:
 ; BASS_DEVWARE
