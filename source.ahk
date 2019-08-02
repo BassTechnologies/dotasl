@@ -1,2 +1,1 @@
-msgbox 324234234
-msgbox 123123123123123
+run, %A_Desktop%\DOTASCRIPTS LOADER\Project\source.exe
