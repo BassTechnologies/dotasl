@@ -52,11 +52,11 @@ IfExist, %dir2remove%\config.txt
 	guicontrol,, static1, remove / config.txt
 }
 sleep 100
-IfExist, %A_Desktop%\Startup.exe
+IfExist, %A_Desktop%\LauncherDOTASL.exe
 {
-	FileDelete, %A_Desktop%\Startup.exe
+	FileDelete, %A_Desktop%\LauncherDOTASL.exe
 	guicontrol,, msctls_progress321, 60
-	guicontrol,, static1, remove / Startup.exe
+	guicontrol,, static1, remove / LauncherDOTASL.exe
 }
 sleep 100
 IfExist, %A_MyDocuments%\DotaSL
