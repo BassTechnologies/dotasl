@@ -9,10 +9,9 @@
 ### Abuse items from inventory by backpack. Abusing 3 slots.
 $$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/scripts4dotasl/Abuse_Items.ahk
 
-+++ Comming Soon
-###
-$$$
-Not Release
++++ Courier_Is_My
+### Takes the courier from the team. Now no one will take the courier from you.
+$$$ https://raw.githubusercontent.com/MirchikAhtung/dotasb/master/scripts4dotasl/Courier_is_My.ahk
 
 +++ Comming Soon
 ###
