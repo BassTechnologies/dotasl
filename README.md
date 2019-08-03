@@ -9,5 +9,5 @@
 >> https://github.com/MirchikAhtung
 
 
-For correct installation, the path must not contain spaces.
-To uninstall, it is advisable to close the My Documents \ Dota SL folder
+>>> For correct installation, the path must not contain spaces.
+>>> To uninstall, it is advisable to close the My Documents \ Dota SL folder
