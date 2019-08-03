@@ -2,11 +2,11 @@
 > Last update: 31.07.2019
 
 
-;##############
-; Please, Do not remove these lines.
+##############
+Please, Do not remove these lines.
 
-; Не удаляйте пожалуйста эти строки
-;##############
+Не удаляйте пожалуйста эти строки.
+##############
 
 ; ###   Dota Scripts Loader ( Dota SL )   ###
 
