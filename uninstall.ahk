@@ -65,7 +65,7 @@ IfExist, %A_MyDocuments%\DotaSL
 	guicontrol,, msctls_progress321, 100
 	guicontrol,, static1, remove / config.txt
 }
-MsgBox, 4160, Dota Scripts Loader | Installer, Процесс деинсталляции завершен.
+MsgBox, 4160, Dota Scripts Loader | Installer, Uninstallation was successful.
 IfMsgBox, OK
 	run, https://github.com/MirchikAhtung/dotasl/tree/master
 IfExist, %dir2remove%\uninstall.exe
