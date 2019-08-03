@@ -7,6 +7,7 @@ IfNotExist, %A_MyDocuments%\DotaSL
 SetWorkingDir, %A_MyDocuments%\DotaSL
 IfNotExist, %A_MyDocuments%\DotaSL\logo.png
 	URLDownloadToFile, https://github.com/MirchikAhtung/dotasl/raw/master/Images/logo.png, logo.png
+#NoTrayIcon
 ;~ ///////////////
 ;~ Gui
 ;~ ///////////////
