@@ -21,7 +21,7 @@ Gui, Font, S11 Cgreen Bold, Verdana
 Gui, Add, Button, x442 y55 w70 h20 gstart, Start
 Gui, Add, Button, x372 y55 w70 h20 gcancel, Cancel
 Gui, Add, Button, x302 y55 w70 h20 gdir, Dir
-Gui, Add, Text, x115 y20 w500 h20 , Установка необходимых файлов.
+Gui, Add, Text, x115 y20 w500 h20 , Install files.
 Gui, Add, GroupBox, x12 y0 w505 h50 ,
 Gui, Show, w529 h109, Dota Scripts Loader | Installer
 IfNotExist, %A_MyDocuments%\DotaSL
@@ -89,7 +89,7 @@ guicontrol,, static1, github / LauncherDOTASL.ahk
 sleep 100
 run, compiler.bat,, UseErrorLevel
 if errorlevel
-	MsgBox ошибка при запуске
+	MsgBox, 8208, Dota Scripts Loader | Installer, Error run compiler.bat
 sleep 2000 ; Чтобы файлы успели появиться.
 
 oWhr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
@@ -110,10 +110,10 @@ guicontrol,, static1, completion...
 IfNotExist, config.txt
 	FileAppend,  , config.txt
 
-MsgBox, 4160, Dota Scripts Loader | Installer, Процесс установки завершен.
+MsgBox, 4160, Dota Scripts Loader | Installer, Installation was successful.
 run, LauncherDOTASL.exe,, UseErrorLevel
 if errorlevel
-	MsgBox ошибка при запуске LauncherDOTASL.exe
+	MsgBox, 8208, Dota Scripts Loader | Installer, Error run LauncherDOTASL.exe
 
 cancel:
 ExitApp
