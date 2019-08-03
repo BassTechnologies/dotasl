@@ -5,5 +5,5 @@
 >> ###   Dota Scripts Loader ( Dota SL )   ###
 
 >> Written by Bass_Devware
->> vk.com/bass_devware
+>> https://vk.com/bass_devware
 >> https://github.com/MirchikAhtung
