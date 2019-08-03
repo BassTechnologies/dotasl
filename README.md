@@ -2,16 +2,16 @@
 > Last update: 31.07.2019
 
 
-##############
-Please, Do not remove these lines.
+>> ##############
+>> Please, Do not remove these lines.
 
-Не удаляйте пожалуйста эти строки.
-##############
+>> Не удаляйте пожалуйста эти строки.
+>> ##############
 
-; ###   Dota Scripts Loader ( Dota SL )   ###
+>> ###   Dota Scripts Loader ( Dota SL )   ###
 
-;##############
-; Written by Bass_Devware
-; vk.com/bass_devware
-; https://github.com/MirchikAhtung
-;##############
+>> ##############
+>> Written by Bass_Devware
+>> vk.com/bass_devware
+>> https://github.com/MirchikAhtung
+>> ##############
